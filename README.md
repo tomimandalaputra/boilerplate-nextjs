@@ -8,14 +8,14 @@ standards live in [`CONVENTIONS.md`](./CONVENTIONS.md).
 
 Next.js 16 · React 19 · TypeScript (strict) · Tailwind v4 · shadcn/ui ·
 TanStack Query 5 · Zustand · next-themes · React Hook Form + Zod ·
-ESLint 9 (flat) + Prettier · Vitest + React Testing Library · pnpm.
+ESLint 9 (flat) + Prettier · Vitest + React Testing Library · npm.
 
 ## Getting started
 
 ```bash
-pnpm install
+npm install
 cp .env.example .env.local   # then point NEXT_PUBLIC_API_BASE_URL at your API
-pnpm dev
+npm run dev
 ```
 
 Open http://localhost:3000 — `/` is a simple landing page; the app lives under
@@ -27,13 +27,13 @@ Open http://localhost:3000 — `/` is a simple landing page; the app lives under
 
 ## Scripts
 
-| Script                                       | What it does                |
-| -------------------------------------------- | --------------------------- |
-| `pnpm dev` / `build` / `start`               | Next.js dev / build / serve |
-| `pnpm lint` / `lint:fix`                     | ESLint (flat config)        |
-| `pnpm format` / `format:check`               | Prettier                    |
-| `pnpm typecheck`                             | `tsc --noEmit`              |
-| `pnpm test` / `test:watch` / `test:coverage` | Vitest                      |
+| Script                                      | What it does                |
+| ------------------------------------------- | --------------------------- |
+| `npm run dev` / `build` / `start`           | Next.js dev / build / serve |
+| `npm run lint` / `lint:fix`                 | ESLint (flat config)        |
+| `npm run format` / `format:check`           | Prettier                    |
+| `npm run typecheck`                         | `tsc --noEmit`              |
+| `npm test` / `test:watch` / `test:coverage` | Vitest                      |
 
 > **Next.js 16 removed `next lint`** and `next build` no longer runs ESLint.
 > CI must run `lint`, `typecheck`, `format:check`, and `test` as separate gates.
