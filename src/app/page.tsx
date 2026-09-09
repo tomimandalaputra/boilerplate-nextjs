@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Counter } from "@/components/shared/counter";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 
@@ -15,6 +16,7 @@ export default function Home() {
           {siteConfig.description}
         </p>
       </div>
+      <Counter />
       <div className="flex flex-wrap items-center justify-center gap-3">
         <Button asChild>
           <Link href="/dashboard">Go to dashboard</Link>
